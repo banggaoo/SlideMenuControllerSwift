@@ -1,3 +1,12 @@
+5.1.0 Release notes (2019-05-14)
+=============================================================
+
+### Enhancements
+* Refactor
+
+### Bugfixes
+* Prevent reference cycle. Init view in viewDidLoad()
+
 5.0.0 Release notes (2019-04-06)
 =============================================================
 
