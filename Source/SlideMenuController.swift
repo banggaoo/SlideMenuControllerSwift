@@ -339,8 +339,8 @@ open class SlideMenuController: UIViewController, UIGestureRecognizerDelegate {
     }
     
     @objc func handleLeftPanGesture(_ panGesture: UIPanGestureRecognizer) {
-        guard isTagetViewController() == false else { return }
-        guard isRightOpen() == true else { return }
+        guard isTagetViewController() == true else { return }
+        guard isRightOpen() == false else { return }
         
         switch panGesture.state {
             case UIGestureRecognizer.State.began:
@@ -411,8 +411,8 @@ open class SlideMenuController: UIViewController, UIGestureRecognizerDelegate {
     }
     
     @objc func handleRightPanGesture(_ panGesture: UIPanGestureRecognizer) {
-        guard isTagetViewController() == false else { return }
-        guard isLeftOpen() == true else { return }
+        guard isTagetViewController() == true else { return }
+        guard isLeftOpen() == false else { return }
  
         switch panGesture.state {
         case UIGestureRecognizer.State.began:
